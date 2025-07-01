@@ -37,11 +37,14 @@
               pylint
 	      vale
 	      ruby
+              tmux
             ] ++ [nvim];
 
             shellHook = ''
               PS1="<nvim>"
-              exec nvim 
+
+              # start nvim within a tmux session
+              exec tmux new-session -d -s main 'nvim'
             '';
           };
         }

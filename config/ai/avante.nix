@@ -32,17 +32,27 @@
             theirs = "ct";
           };
         };
-        provider = "claude";
-        providers = {
-          claude = {
-            endpoint = "https://api.anthropic.com";
-            extra_request_body = {
-              max_tokens = 4096;
-              temperature = 0;
+        provider = "openwebui";
+        vendors = {
+            openwebui = {
+              __inherited_from = "openai";
+              api_key_name = "OPENWEBUI_API_KEY";
+              endpoint = "http://192.168.0.109:8080/api";
+              model = "gemma3:1b";
+              disable_tools = true;
             };
-            model = "claude-sonnet-4-20250514";
-          };
         };
+        # provider = "claude";
+        # providers = {
+        #   claude = {
+        #     endpoint = "https://api.anthropic.com";
+        #     extra_request_body = {
+        #       max_tokens = 4096;
+        #       temperature = 0;
+        #     };
+        #     model = "claude-sonnet-4-20250514";
+        #   };
+        # };
         windows = {
           sidebar_header = {
             align = "center";

@@ -3,6 +3,7 @@
   imports = [
     ./treesitter-nvim.nix
     ./dap.nix
+    ./cmp-nvim.nix
   ];
 
   options = {
@@ -12,5 +13,6 @@
   config = lib.mkIf config.languages.enable {
     treesitter-nvim.enable = lib.mkDefault true;
     dap.enable = lib.mkDefault true;
+    cmp-nvim.enable = lib.mkDefault true;
   };
 }

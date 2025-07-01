@@ -16,6 +16,7 @@
     ./envs
     ./misc
     ./ui
+    ./integrations
   ];
 
   ai.enable = lib.mkDefault true;
@@ -33,4 +34,5 @@
   envs.enable = true;
   misc.enable = true;
   ui.enable = true;
+  integrations.enable = true;
 }
