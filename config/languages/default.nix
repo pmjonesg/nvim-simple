@@ -4,6 +4,7 @@
     ./treesitter-nvim.nix
     ./dap.nix
     ./cmp-nvim.nix
+    ./neotest.nix
   ];
 
   options = {
@@ -14,5 +15,6 @@
     treesitter-nvim.enable = lib.mkDefault true;
     dap.enable = lib.mkDefault true;
     cmp-nvim.enable = lib.mkDefault true;
+    neotest.enable = lib.mkDefault true;
   };
 }

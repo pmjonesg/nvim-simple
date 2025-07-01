@@ -4,7 +4,7 @@
     dap.enable = lib.mkEnableOption "Enable dap plugins";
   };
 
-  config = lib.mkIf config.treesitter-nvim.enable {
+  config = lib.mkIf config.dap.enable {
     plugins.dap = {
       enable = true;
     };
