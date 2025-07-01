@@ -106,6 +106,60 @@
             desc = "step out";
             mode = "n";
           }
+	  {
+            __unkeyed-1 = "<leader>tr";
+            __unkeyed-2 = "<cmd>:lua require('neotest').run.run()<cr>";
+            desc = "run nearest test";
+            mode = "n";
+          }
+	  {
+            __unkeyed-1 = "<leader>tf";
+            __unkeyed-2 = "<cmd>:lua require('neotest').run.run(vim.fn.expand('%'))<cr>";
+            desc = "run current file";
+            mode = "n";
+          }
+	  {
+            __unkeyed-1 = "<leader>ta";
+            __unkeyed-2 = "<cmd>:lua require('neotest').run.run({ suite = true })<cr>";
+            desc = "run all";
+            mode = "n";
+          }
+	  {
+            __unkeyed-1 = "<leader>td";
+            __unkeyed-2 = "<cmd>:lua require('neotest').run.run({ strategy = 'dap' })<cr>";
+            desc = "debug nearest test";
+            mode = "n";
+          }
+	  {
+            __unkeyed-1 = "<leader>ts";
+            __unkeyed-2 = "<cmd>:lua require('neotest').run.stop()<cr>";
+            desc = "stop test";
+            mode = "n";
+          }
+	  {
+            __unkeyed-1 = "<leader>tn";
+            __unkeyed-2 = "<cmd>:lua require('neotest').run.attach()<cr>";
+            desc = "attach to nearest test";
+            mode = "n";
+          }
+	  {
+            __unkeyed-1 = "<leader>to";
+            __unkeyed-2 = "<cmd>:lua require('neotest').output.open()<cr>";
+            desc = "show test output";
+            mode = "n";
+          }
+	  {
+            __unkeyed-1 = "<leader>tp";
+            __unkeyed-2 = "<cmd>:lua require('neotest').output_panel.toggle()<cr>";
+            desc = "toggle output panel";
+            mode = "n";
+          }
+	  {
+            __unkeyed-1 = "<leader>tv";
+            __unkeyed-2 = "<cmd>:lua require('neotest').summary.toggle()<cr>";
+            desc = "toggle summary";
+            mode = "n";
+          }
 	];
       };
     };

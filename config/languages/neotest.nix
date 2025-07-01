@@ -7,6 +7,9 @@
   config = lib.mkIf config.neotest.enable {
     plugins.neotest = {
       enable = true;
+      adapters = {
+        python = { enable = true; };
+      };
       settings = {
         output = {
           enabled = true;
