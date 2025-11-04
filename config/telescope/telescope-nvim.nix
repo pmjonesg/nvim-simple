@@ -58,6 +58,42 @@
            action = "live_grep";
            options.desc = "grep (root dir)";
         };
+        "<leader>fgf" = {
+           action = "git_files";
+           options.desc = "git files";
+        };
+        "<leader>fgc" = {
+           action = "git_commits";
+           options.desc = "git commits";
+        };
+        "<leader>fr" = {
+           action = "resume";
+           options.desc = "resume";
+        };
+        "<leader>fc" = {
+           action = "commands";
+           options.desc = "commands";
+        };
+        "<leader>fb" = {
+           action = "buffers";
+           options.desc = "buffers";
+        };
+        "<leader>fm" = {
+           action = "marks";
+           options.desc = "marks";
+        };
+        "<leader>flr" = {
+           action = "lsp_references";
+           options.desc = "LSP references";
+        };
+        "<leader>fld" = {
+           action = "lsp_definitions";
+           options.desc = "LSP definitions";
+        };
+        "<leader>flt" = {
+           action = "lsp_type_definitions";
+           options.desc = "LSP type definitions";
+        };
       };
     };
   };
