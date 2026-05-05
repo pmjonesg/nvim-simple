@@ -44,7 +44,7 @@
               PS1="<nvim>"
 
               # start nvim within a tmux session
-              exec tmux new-session -d -s main 'nvim'
+              # exec tmux new-session -d -s main 'nvim'
             '';
           };
         }
